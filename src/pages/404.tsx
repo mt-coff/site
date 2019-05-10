@@ -1,14 +1,19 @@
 import React from "react"
-
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import SEO from "../components/SEO"
+import VHCentering from "../components/VHCentering"
+import styled from "styled-components"
 
 const NotFoundPage: React.FC = () => (
-  <Layout>
+  <StyledCentering>
     <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
+    <h1>404 Not Found</h1>
+  </StyledCentering>
 )
+
+const StyledCentering = styled(VHCentering)`
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+`
 
 export default NotFoundPage

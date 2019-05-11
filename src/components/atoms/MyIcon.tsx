@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import styled from "styled-components"
 
-const MyIcon: React.FC = () => {
+export const MyIcon: React.FC = () => {
   return (
     <StaticQuery
       query={graphql`
@@ -25,5 +25,3 @@ const MyIcon: React.FC = () => {
 const Image = styled(Img)`
   border-radius: 100%;
 `
-
-export default MyIcon

@@ -27,10 +27,10 @@ const Summary: React.FC = () => {
       <MyIcon />
       <IntroArea>I love coffee ☕️</IntroArea>
       <ButtonArea>
-        {allSnsJson.edges.map(edge => {
+        {allSnsJson.edges.map(({node}) => {
           return (
-            <Button key={edge.node.id} link={edge.node.link} color="#c0ffee">
-              {edge.node.name}
+            <Button key={node.id} link={node.link} color="#c0ffee">
+              {node.name}
             </Button>
           )
         })}

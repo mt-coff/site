@@ -1,0 +1,22 @@
+{
+  "name": "mt-coff",
+  "author": "mt_coff <contact@mt-coff.me>",
+  "version": "2.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "fmt": "prettier --write 'src/**/*.{js,ts,vue}'"
+  },
+  "husky": {
+    "pre-commit": "npm run fmt"
+  },
+  "dependencies": {
+    "vue": "^3.0.0-beta.15"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.0.0-beta.15",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
+    "vite": "^1.0.0-beta.3"
+  }
+}

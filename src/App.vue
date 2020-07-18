@@ -1,7 +1,5 @@
 <template>
-  <div>
-    2.0.0
-  </div>
+  <div>2.0.0</div>
 </template>
 
 <script lang="ts">

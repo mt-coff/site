@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "fmt": "prettier --write 'src/**/*.{js,ts,vue}'",
+    "lint": "eslint 'src/**/*.{ts,tsx,vue}'",
+    "fmt": "prettier --write 'src/**/*.{ts,tsx,vue}'",
     "typecheck": "tsc -p . --noEmit"
   },
   "husky": {
@@ -15,7 +16,13 @@
     "vue": "^3.0.0-beta.15"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.6.1",
+    "@typescript-eslint/parser": "^3.6.1",
     "@vue/compiler-sfc": "^3.0.0-beta.15",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-vue": "^7.0.0-alpha.10",
     "husky": "^4.2.5",
     "prettier": "^2.0.5",
     "typescript": "^3.9.6",

@@ -5,9 +5,15 @@ type Props = {
   color: "blue" | "yellow";
   src: string;
   href: string;
+  name: string;
 };
 
-export const LinkIcon: FunctionComponent<Props> = ({ color, src, href }) => {
+export const LinkIcon: FunctionComponent<Props> = ({
+  color,
+  src,
+  href,
+  name,
+}) => {
   return (
     <a
       className={`${styles["link-icon"]} ${
@@ -17,7 +23,7 @@ export const LinkIcon: FunctionComponent<Props> = ({ color, src, href }) => {
       target="_blank"
       rel="noreferrer"
     >
-      <img src={src} />
+      <img src={src} alt={`${name} icon`} />
     </a>
   );
 };

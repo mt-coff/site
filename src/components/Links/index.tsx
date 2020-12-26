@@ -40,6 +40,7 @@ export const Links: FunctionComponent = () => {
               color={idx % 2 === 0 ? "blue" : "yellow"}
               href={link.href}
               src={link.src}
+              name={link.name}
             />
           </span>
         ))}

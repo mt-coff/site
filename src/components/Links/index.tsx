@@ -1,6 +1,9 @@
 import { h, FunctionComponent } from "preact";
 import styles from "./index.module.css";
 import { LinkIcon } from "../LinkIcon";
+import githubIcon from "../../assets/img/github.png"
+import twitterIcon from "../../assets/img/twitter.svg"
+import blogIcon from "../../assets/img/blog.svg"
 
 type SocialLink = {
   name: string;
@@ -12,18 +15,18 @@ const linkList: SocialLink[] = [
   {
     name: "github",
     href: "https://github.com/mt-coff",
-    src: "/src/assets/img/github.png",
+    src: githubIcon,
   },
   {
     name: "twitter",
     href: "https://github.com/mt-coff",
-    src: "/src/assets/img/twitter.svg",
+    src: twitterIcon,
   },
   {
     name: "blog",
     href: "https://blog.mt-coff.me",
-    src: "/src/assets/img/blog.svg"
-  }
+    src: blogIcon,
+  },
 ];
 
 export const Links: FunctionComponent = () => {

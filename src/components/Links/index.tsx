@@ -1,9 +1,9 @@
 import { h, FunctionComponent } from "preact";
 import styles from "./index.module.css";
 import { LinkIcon } from "../LinkIcon";
-import githubIcon from "../../assets/img/github.png"
-import twitterIcon from "../../assets/img/twitter.svg"
-import blogIcon from "../../assets/img/blog.svg"
+import githubIcon from "../../assets/img/github.png";
+import twitterIcon from "../../assets/img/twitter.svg";
+import blogIcon from "../../assets/img/blog.svg";
 
 type SocialLink = {
   name: string;

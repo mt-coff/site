@@ -1,6 +1,6 @@
 import { h, FunctionComponent } from "preact";
 import styles from "./index.module.css";
-import mtImg from "../../assets/img/mt_coff.jpg"
+import mtImg from "../../assets/img/mt_coff.jpg";
 
 export const Introduction: FunctionComponent = () => {
   return (

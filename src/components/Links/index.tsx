@@ -15,10 +15,15 @@ const linkList: SocialLink[] = [
     src: "/src/assets/img/github.png",
   },
   {
-    name: "github",
+    name: "twitter",
     href: "https://github.com/mt-coff",
     src: "/src/assets/img/twitter.svg",
   },
+  {
+    name: "blog",
+    href: "https://blog.mt-coff.me",
+    src: "/src/assets/img/blog.svg"
+  }
 ];
 
 export const Links: FunctionComponent = () => {

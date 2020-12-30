@@ -19,7 +19,7 @@ const linkList: SocialLink[] = [
   },
   {
     name: "twitter",
-    href: "https://github.com/mt-coff",
+    href: "https://twitter.com/mt_coff",
     src: twitterIcon,
   },
   {
